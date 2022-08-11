@@ -20,6 +20,8 @@ input {
 
 h2 {
   font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
 }
 
 h3 {

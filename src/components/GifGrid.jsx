@@ -9,8 +9,8 @@ export const GifGrid = ({ category }) => {
     return(
             <div className="card-grid">
                 { isloading && <SvgComponent /> }
-                <h2 key={category} >{category}</h2>
-                    { images.map((image) =>  <GifItem key={image.id} {...image} />)}
+                <h2>{category}</h2>
+                { images.map((image) =>  <GifItem key={image.id} {...image} />)}
             </div>
     )
 }

@@ -5,11 +5,11 @@ import { AddCategory, GifGrid } from './components'
 
 export const App = () => {
 
-  const [categories, setCategories] = useState(['Batman'])
+  const [categories, setCategories] = useState(['BORDER COLLIE'])
 
   const setCategory = (inputValue) => {
     if(categories.includes(inputValue)) return
-    setCategories([...categories, inputValue])
+    setCategories([ inputValue, ...categories])
   }
 
   return (
